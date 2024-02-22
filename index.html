@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div class="pbg-container"></div>
+  <script type="text/javascript"
+    src="https://unpkg.com/profile-picture-generator@1.5.0/dist/profile-picture-generator.js"
+    integrity="sha384-26g7geqCMjr1i6cid56u5QUkDmm4Fs3hd+6zUGwkcfdrbSQ6pluSCQq85jga55Eb"
+    crossorigin="anonymous"></script>
+  <script type="application/javascript">
+    (function () {
+      window.ProfilePictureGenerator({
+        container: document.querySelector('.pbg-container'),
+        initialLanguage: 'de',
+        languages: {
+          de: {
+            name: 'German',
+            uploadButtonTitle: "Eigenes Profilbild generieren",
+            downloadButtonTitle: "Profilbild herunterladen",
+            imageAltText: "Generiertes Fridays for Future Profilbild",
+            fileName: "ProfilePicture.png",
+            templateUrl: "https://fridaysforfuture.de/src/bayern/dist/src/templates/bayern_2020-03-13/template.png",
+            imagePreview: "https://fridaysforfuture.de/src/bayern/dist/src/templates/bayern_2020-03-13/preview.png",
+            privacyNote: "Die ausgewählte Datei wird an keinen Server versendet. Die gesamte Bildgenerierung findet im Browser statt.",
+            privacyLinkText: "Datenschutzerklärung"
+          },
+          en: {
+            name: 'English',
+            templateUrl: "https://fridaysforfuture.de/src/templates/en/template.png",
+            imagePreview: "https://fridaysforfuture.de/src/templates/en/preview.png",
+          }
+        }
+      });
+    })();
+  </script> 
+</body>
+</html>
